@@ -1,58 +1,68 @@
 <header>
-  <img src="../assets/images/djamo-logo-black.svg" alt="logo" />
+  <div class="container">
+    <img class="logo" src="../assets/images/djamo-logo-black.svg" alt="logo" />
+  </div>
 </header>
 
 <section class="hero">
-  <h1>Gérez tout votre argent dans un application unique</h1>
-  <p>
-    Nous bâtissons la première super application financière de l’Afrique de
-    l’Ouest avec des solutions simples, sécurisées et 100% numériques afin que
-    vous puissiez avoir le contrôle de votre argent, depuis votre téléphone
-    mobile.
-  </p>
+  <div class="container">
+    <h1>Gérez tout votre argent dans un application unique</h1>
+    <p>
+      Nous bâtissons la première super application financière de l’Afrique de
+      l’Ouest avec des solutions simples, sécurisées et 100% numériques afin que
+      vous puissiez avoir le contrôle de votre argent, depuis votre téléphone
+      mobile.
+    </p>
 
-  <h2>Notre presence</h2>
-  <div class="card-container">
-    <ng-container *ngFor="let country of countries">
-      <app-card
-        [cardTitle]="country.name"
-        [cardStatus]="country.status"
-        [cardImage]="country.flag"
-      ></app-card>
-    </ng-container>
+    <h2>Notre presence</h2>
+    <div class="card-container">
+      <ng-container *ngFor="let country of countries">
+        <app-card
+          [cardTitle]="country.name"
+          [cardStatus]="country.status"
+          [cardImage]="country.flag"
+        ></app-card>
+      </ng-container>
+    </div>
   </div>
 </section>
 
 <section class="about">
-  <img src="../assets/images/arrow.png" alt="arrow logo" />
-  <h3>Notre mission, améliorer la santé financière de nos clients.</h3>
-  <div>
-    Qu’il s’agisse de gérer vos dépenses quotidiennes ou de planifier votre
-    avenir avec une épargne et des investissements, Djamo vous aidera à
-    reprendre le contrôle sur vos finances et à mieux utiliser votre argent.
-  </div>
-  <div>
-    <img src="../assets/images/google-play.png" alt="logo google play" />
-    <img src="../assets/images/apple-ios.webp" alt="logo apple store" />
-  </div>
-  <div>
-    <img src="../assets/images/djamo-card-people.png" alt=" people" />
+  <div class="container">
+    <img src="../assets/images/arrow.png" alt="arrow logo" />
+    <h3>Notre mission, améliorer la santé financière de nos clients.</h3>
+    <div>
+      Qu’il s’agisse de gérer vos dépenses quotidiennes ou de planifier votre
+      avenir avec une épargne et des investissements, Djamo vous aidera à
+      reprendre le contrôle sur vos finances et à mieux utiliser votre argent.
+    </div>
+    <div>
+      <img src="../assets/images/google-play.png" alt="logo google play" />
+      <img src="../assets/images/apple-ios.webp" alt="logo apple store" />
+    </div>
+    <div>
+      <img src="../assets/images/djamo-card-people.png" alt=" people" />
+    </div>
   </div>
 </section>
 
 <section class="info">
-  <ng-container *ngFor="let info of infos">
-    <app-info
-      [position]="info.position"
-      [title]="info.title"
-      [content]="info.content"
-    ></app-info>
-  </ng-container>
+  <div class="container">
+    <ng-container *ngFor="let info of infos">
+      <app-info
+        [position]="info.position"
+        [title]="info.title"
+        [content]="info.content"
+      ></app-info>
+    </ng-container>
+  </div>
 </section>
 
 <footer class="footer">
-  <div class="logo">
-    <img src="../assets/images/apple-ios.webp" alt="apple store logo" />
-    <img src="../assets/images/google-play.png" alt=" play store logo" />
+  <div class="container">
+    <div class="logo">
+      <img src="../assets/images/apple-ios.webp" alt="apple store logo" />
+      <img src="../assets/images/google-play.png" alt=" play store logo" />
+    </div>
   </div>
 </footer>

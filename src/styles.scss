@@ -1,10 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
-:root,
+*,
 ::before,
 ::after {
   box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --clr-black: #000;
+  --clr-green: #cbedde;
+  --clr-ligth-green: #d5f1e5;
+  --clr-blue: #0a32ff;
 }
 
 body {
   font-family: "Roboto Mono", monospace;
+  line-height: 2rem;
+}
+
+.container {
+  padding: 0 1.5rem;
+}
+
+// header
+header {
+  background: var(--clr-green);
+  text-align: center;
+  padding: 0.3rem 0;
+}
+
+.logo {
+  width: 100%;
+  max-width: 6.25rem;
 }
