@@ -6,6 +6,16 @@
   margin: 0;
 }
 
+@font-face {
+  font-family: "FuturaPTLight";
+  src: url(./assets/fonts/futura-pt-light.otf);
+}
+
+@font-face {
+  font-family: "FuturaPTBold";
+  src: url(./assets/fonts/futura-pt-bold.otf);
+}
+
 :root {
   --clr-black: #000;
   --clr-green: #cbedde;
@@ -14,8 +24,9 @@
 }
 
 body {
-  font-family: "Roboto Mono", monospace;
+  font-family: "FuturaPTLight";
   line-height: 2rem;
+  font-size: 1.25rem;
 }
 
 .container {
@@ -27,9 +38,155 @@ header {
   background: var(--clr-green);
   text-align: center;
   padding: 0.3rem 0;
+  position: fixed;
+
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  padding: 1rem;
 }
 
 .logo {
   width: 100%;
   max-width: 6.25rem;
+}
+
+// hero section
+.hero {
+  margin-top: 2.5rem;
+  padding: 2.5rem 0;
+  margin-bottom: 2rem;
+
+  &-title {
+    text-transform: uppercase;
+    color: var(--clr-blue);
+    margin: 4rem 0 1.5rem 0;
+
+    text-align: center;
+    font-weight: bold;
+    font-family: "FuturaPTBold";
+    font-size: 2.2rem;
+    letter-spacing: 0.2rem;
+  }
+
+  &-content {
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  &-subtitle {
+    color: var(--clr-blue);
+    text-transform: uppercase;
+    font-weight: bold;
+
+    font-family: "FuturaPTBold";
+    text-align: center;
+    font-size: 2.2rem;
+  }
+}
+
+.card-container {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+// circle banner
+.circle-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url(./assets/images/cover-circle.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  width: 100%;
+  background-position: 50%;
+  height: 95px;
+}
+
+.bounce {
+  animation-play-state: running;
+  animation-duration: 2s;
+  animation: infinite;
+}
+
+// about section
+.about {
+  text-align: center;
+  background: var(--clr-green);
+  padding: 2rem 0;
+
+  margin-bottom: 1.5rem;
+
+  &-title {
+    font-family: "FuturaPTBold";
+    font-weight: bolder;
+    font-size: 2rem;
+
+    padding: 1.5rem 0;
+    letter-spacing: 0.1rem;
+    line-height: 2.2rem;
+  }
+
+  &-content {
+    font-size: 1.7rem;
+    line-height: 2.2rem;
+    padding: 1.7rem 0 2rem 0;
+  }
+
+  &-platform-logo {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+
+    img {
+      width: 100%;
+      max-width: 15.625rem;
+    }
+  }
+
+  &-image {
+    display: none;
+  }
+}
+
+// info
+.info {
+  margin: 1.5rem 0;
+  font-family: "FuturaPTBold";
+}
+
+.info--title {
+  font-weight: bold;
+  color: var(--clr-blue);
+  text-align: center;
+
+  font-size: 2.5rem;
+  font-family: "FuturaPTBold";
+}
+
+// footer
+.footer {
+  background: black;
+  padding: 3rem 1.5rem;
+  // text-align: center;
+
+  &-company {
+    color: #ffffff;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
