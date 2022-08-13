@@ -2,9 +2,35 @@
   padding: 2rem 1rem;
   border-radius: 0.25rem;
   margin: 1rem 0;
+  border: 0.1px solid rgba(204, 204, 204, 0.2);
 
   box-shadow: -9px 4px 28px -24px rgba(0, 0, 0, 0.41);
   -webkit-box-shadow: -9px 4px 28px -24px rgba(0, 0, 0, 0.41);
   -moz-box-shadow: -9px 4px 28px -24px rgba(0, 0, 0, 0.41);
   cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .card-img {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .card {
+    padding: 2rem 3rem 2rem 3rem;
+
+    &-img {
+      width: 500px;
+      margin-bottom: 4rem;
+    }
+
+    &-content {
+      // margin-top: 1rem;
+    }
+  }
 }

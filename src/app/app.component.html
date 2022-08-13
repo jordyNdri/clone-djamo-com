@@ -7,7 +7,7 @@
 <section class="hero">
   <div class="container mt-4">
     <h1 class="hero-title">
-      Gérez tout votre argent dans un application unique
+      Gérez tout votre argent dans une application unique
     </h1>
     <p class="hero-content">
       Nous bâtissons la première super application financière de l’Afrique de
@@ -65,13 +65,15 @@
 <section class="info">
   <h2 class="info--title">Nos Valeurs</h2>
   <div class="container">
-    <ng-container *ngFor="let info of infos">
-      <app-info
-        [position]="info.position"
-        [title]="info.title"
-        [content]="info.content"
-      ></app-info>
-    </ng-container>
+    <div class="container__flex">
+      <ng-container *ngFor="let info of infos">
+        <app-info
+          [position]="info.position"
+          [title]="info.title"
+          [content]="info.content"
+        ></app-info>
+      </ng-container>
+    </div>
   </div>
 </section>
 
@@ -83,6 +85,6 @@
     <div>
       <img src="../assets/images/google-play.png" alt=" play store logo" />
     </div>
-    <div class="footer-company">© Djamo Inc</div>
   </div>
+  <div class="footer-company">© Djamo Inc</div>
 </footer>

@@ -1,6 +1,9 @@
 .info {
   &-container {
     padding: 1.5rem 0;
+    flex: 0 0 48%;
+    margin-bottom: 20px;
+    padding: 20px;
   }
 
   &-position {
@@ -43,8 +46,19 @@
     line-height: 1.35;
     font-size: 1.7rem;
 
-    // letter-spacing: 0.1rem;
     text-align: justify;
     font-weight: 500;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .info {
+    &-container {
+      // padding: 2rem 0;
+    }
+    &-content {
+      // width: 70%;
+      // line-height: 0;
+    }
   }
 }
