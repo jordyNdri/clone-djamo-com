@@ -50,6 +50,7 @@ header {
 .logo {
   width: 100%;
   max-width: 6.25rem;
+  cursor: pointer;
 }
 
 // hero section
@@ -266,9 +267,11 @@ header {
 
   // section: info
   .container__flex {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1rem;
     padding: 30px 0;
   }
 
@@ -283,5 +286,13 @@ header {
   .about {
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+  }
+
+  .px-4 {
+    padding: 0 4rem;
+  }
+
+  .container__flex {
+    margin: 5rem 0;
   }
 }
