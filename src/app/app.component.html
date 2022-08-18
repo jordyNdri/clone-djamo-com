@@ -7,16 +7,11 @@
 <section class="hero">
   <div class="container mt-4">
     <h1 class="hero-title">
-      Gérez tout votre argent dans une application unique
+      {{ heroSection.title }}
     </h1>
-    <p class="hero-content">
-      Nous bâtissons la première super application financière de l’Afrique de
-      l’Ouest avec des solutions simples, sécurisées et 100% numériques afin que
-      vous puissiez avoir le contrôle de votre argent, depuis votre téléphone
-      mobile.
-    </p>
+    <p class="hero-content">{{ heroSection.content }}</p>
 
-    <h2 class="hero-subtitle">Notre presence</h2>
+    <h2 class="hero-subtitle">{{ heroSection.subtitle }}</h2>
     <div class="card-container">
       <ng-container *ngFor="let country of countries">
         <app-card
@@ -37,13 +32,9 @@
 <section class="about" id="about">
   <div class="container">
     <h3 class="about-title">
-      Notre mission, améliorer la santé financière de nos clients.
+      {{ aboutSection.title }}
     </h3>
-    <div class="about-content">
-      Qu’il s’agisse de gérer vos dépenses quotidiennes ou de planifier votre
-      avenir avec une épargne et des investissements, Djamo vous aidera à
-      reprendre le contrôle sur vos finances et à mieux utiliser votre argent.
-    </div>
+    <div class="about-content">{{aboutSection.content}</div>
     <div class="about-platform-logo">
       <div>
         <img src="../assets/images/google-play.png" alt="logo google play" />

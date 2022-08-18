@@ -51,3 +51,19 @@ export const INFO: Info[] = [
     les succursales, les centres de services clients inefficaces.`,
   },
 ];
+
+export const HERO_SECTION = {
+  title: 'Gérez tout votre argent dans une application unique',
+  subtitle: 'Notre presence',
+  content: ` Nous bâtissons la première super application financière de l’Afrique de
+  l’Ouest avec des solutions simples, sécurisées et 100% numériques afin que
+  vous puissiez avoir le contrôle de votre argent, depuis votre téléphone
+  mobile.`,
+};
+
+export const ABOUT_SECTION = {
+  title: 'Notre mission, améliorer la santé financière de nos clients.',
+  content: `Qu’il s’agisse de gérer vos dépenses quotidiennes ou de planifier votre
+  avenir avec une épargne et des investissements, Djamo vous aidera à
+  reprendre le contrôle sur vos finances et à mieux utiliser votre argent.`,
+};

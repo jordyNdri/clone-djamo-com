@@ -1,5 +1,10 @@
 import { Component } from '@angular/core';
-import { COUNTRIES, INFO } from './core/constantes';
+import {
+  ABOUT_SECTION,
+  COUNTRIES,
+  HERO_SECTION,
+  INFO,
+} from './core/constantes';
 import { Country } from './core/interfaces/country.interface';
 import { Info } from './core/interfaces/info.interface';
 
@@ -11,4 +16,6 @@ import { Info } from './core/interfaces/info.interface';
 export class AppComponent {
   countries: Array<Country> = COUNTRIES;
   infos: Array<Info> = INFO;
+  heroSection = HERO_SECTION;
+  aboutSection = ABOUT_SECTION;
 }
