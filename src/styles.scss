@@ -100,13 +100,14 @@ header {
   justify-content: center;
   align-items: center;
 
-  background-image: url(./assets/images/cover-circle.png);
+  // background-image: url(./assets/images/cover-circle.png);
   background-repeat: no-repeat;
   background-size: cover;
 
   width: 100%;
   background-position: 50%;
   height: 95px;
+  background-color: var(--clr-green);
 }
 
 .bounce {
@@ -288,10 +289,10 @@ header {
 }
 
 @media screen and (min-width: 1400px) {
-  .about {
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-  }
+  // .about {
+  //   border-top-left-radius: 30px;
+  //   border-top-right-radius: 30px;
+  // }
 
   .px-4 {
     padding: 0 4rem;

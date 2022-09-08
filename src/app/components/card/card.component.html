@@ -1,5 +1,14 @@
 <div class="card">
-  <img class="card-img" [src]="cardImage" alt=" country logo" />
+  <ng-container *ngIf="cardWebsite; else noLink">
+    <a [href]="cardWebsite" target="_blank">
+      <img class="card-img" [src]="cardImage" alt=" country logo" />
+    </a>
+  </ng-container>
+
+  <ng-template #noLink>
+    <img class="card-img" [src]="cardImage" alt=" country logo" />
+  </ng-template>
+
   <div class="card-content">
     <h2>{{ cardTitle }}</h2>
     <p>{{ cardStatus }}</p>

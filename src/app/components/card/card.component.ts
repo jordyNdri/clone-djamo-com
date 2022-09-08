@@ -11,14 +11,11 @@ import {
   styleUrls: ['./card.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class CardComponent implements OnInit {
+export class CardComponent {
   @Input() cardImage!: string;
   @Input() cardTitle!: string;
   @Input() cardStatus!: string;
+  @Input() cardWebsite!: any;
 
   constructor() {}
-
-  ngOnInit(): void {
-    console.log('on init');
-  }
 }

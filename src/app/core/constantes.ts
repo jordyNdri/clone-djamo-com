@@ -6,6 +6,7 @@ export const COUNTRIES: Country[] = [
     name: "Cote d'ivoire",
     flag: 'assets/images/flags/ci.png',
     status: 'Disponible',
+    website: 'https://clonedjamo-ci.netlify.app/home',
   },
   {
     name: 'Senegal',
